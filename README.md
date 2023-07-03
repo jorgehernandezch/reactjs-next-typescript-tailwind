@@ -1,34 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React JS
+_Next 13 | Typescript | Tailwind | Google Fonts_
 
-## Getting Started
+## Comenzando 🚀
 
-First, run the development server:
+_Sigue las siguientes instrucciones para clonar este repositorio en tu máquina local y poder trabajar desde el principio con React JS, Next, Tailwind y Google Fonts._
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+### Pre-requisitos 📋
+
+Para clonar este repositorio, debes tener instalado Node JS e un gestor de paquetes como NPM o Yarn.
+
+Antes de comenzar verifica si tienes Node JS con cualquiera de los siguientes comandos en tu terminal.
+```
+node --version 
+node -v
+```
+Si no lo tienes instalado lo pueden instalar siguiendo la documentación oficial en:  
+https://nodejs.org/en/
+_Siempre recomiendo einstalar la versión LTS_
+
+Verifica las versiones de los gestores de paquetes con
+
+```
+npm --version
+yarn -v
+```
+Mínimas Versiones
+
+Versión Node - 16.17.0
+Versión NPM - 8.15.0
+Versión Yarn - 2.3.5 
+
+### Instalación 🔧
+
+_Clone el repositorio_
+
+```
+git clone https://github.com/jorgehernandezch/reactjs-next-typescript-tailwind.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+_Instale todas las dependencias del Proyecto con_
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+_Inicie el proyecto con_
 
-## Learn More
+```
+npm run dev
+```
+_Si todo está correcto puede acceder al proyecto en la dirección http://localhost:3000/_
 
-To learn more about Next.js, take a look at the following resources:
+### Colaboración
+_Haz un fork del proyecto y crea un Pull Request a la rama Dev. Pull Request a la rama Master será cerrado._
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+[Jorge Edo. Hernández](https://github.com/jorgehernandezch)  
+_Ingeniero y Desarrollador Web_
