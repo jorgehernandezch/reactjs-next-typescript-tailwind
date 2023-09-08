@@ -1,9 +1,7 @@
-export const Header = () =>{
-  return(
+export const Header = () => {
+  return (
     <>
-      <header>
-        Header
-      </header>
+      <header>Header</header>
     </>
   )
 }
