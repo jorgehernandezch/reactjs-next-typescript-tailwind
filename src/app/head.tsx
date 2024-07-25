@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>Title App</title>
+      <title>GoLeads</title>
     </>
   )
 }
