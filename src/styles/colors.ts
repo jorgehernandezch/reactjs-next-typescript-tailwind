@@ -1,6 +1,5 @@
 export const colors = {
-  branco: '#ffffff',
-  cinza: {
+  gray: {
     '50': '#FAFAFA',
     '100': '#F5F5F5',
     '200': '#EEEEEE',
@@ -12,7 +11,7 @@ export const colors = {
     '800': '#424242',
     '900': '#212121',
   },
-  azul: {
+  blue: {
     '50': '#E8EAF6',
     '500': '#3F51B5',
     '800': '#283593',
@@ -20,7 +19,7 @@ export const colors = {
     A400: '#3D5AFE',
     menu: '#000F40',
   },
-  verde: {
+  green: {
     '50': '#E8F5E9',
     '500': '#4CAF50',
     '600': '#43A047',
@@ -32,13 +31,13 @@ export const colors = {
     A400: '#00E676',
     A700: '#00C853',
   },
-  vermelho: {
+  red: {
     '50': '#FFEBEE',
     '500': '#F44336',
     A200: '#FF5252',
     A400: '#FF1744',
   },
-  amarelo: {
+  yellow: {
     '50': '#FFFDE7',
     '800': '#F9A825',
     A200: '#FFFF00',
