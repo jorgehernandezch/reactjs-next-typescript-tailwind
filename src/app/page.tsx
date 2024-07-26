@@ -1,9 +1,5 @@
-import { AuthScreen } from '@/components/AuthScreen'
+'use client'
 
-export default function Index() {
-  return (
-    <AuthScreen>
-      <div className="h-full bg-white rounded-lg"></div>
-    </AuthScreen>
-  )
+export default function RootPage({ children }: { children: JSX.Element }) {
+  return <h1>splahs</h1>
 }

@@ -1,4 +1,5 @@
 export const colors = {
+  white: '#FFFFFF',
   gray: {
     '50': '#FAFAFA',
     '100': '#F5F5F5',
@@ -28,6 +29,7 @@ export const colors = {
     '900': '#1B5E20',
     A100: '#B9F6CA',
     A200: '#69F0AE',
+    A300: '#52EFB2',
     A400: '#00E676',
     A700: '#00C853',
   },
@@ -44,6 +46,6 @@ export const colors = {
   },
   gradient: {
     red: 'linear-gradient(180deg, #B22222 100%, #800000 100%)',
-    blue: 'linear-gradient(180deg, #52EFB2 100%, #007EEF 100%)',
+    blue: 'linear-gradient(180deg, #52EFB2 80%, #007EEF 100%)',
   },
 }
