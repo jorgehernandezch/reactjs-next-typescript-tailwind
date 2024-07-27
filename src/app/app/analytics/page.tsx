@@ -1,3 +1,7 @@
-export default function Analytics() {
-  return <h1>empresas</h1>
+'use client'
+
+import { TemplateApp } from '@/components/Template'
+
+export default function App() {
+  return <TemplateApp header={<></>} table={<></>} />
 }

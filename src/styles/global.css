@@ -3,6 +3,10 @@
 @tailwind utilities;
 @import 'flowbite';
 
+html {
+    font-family: theme('fontFamily.openSans');
+}
+
 @font-face {
     font-family: 'SF Pro Display';
     src: url('/fonts/SF-Pro-Display-Thin.otf') format('opentype');

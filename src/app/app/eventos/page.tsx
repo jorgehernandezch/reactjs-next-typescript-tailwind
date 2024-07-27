@@ -1,3 +1,8 @@
-export default function Eventos() {
-  return <h1>Eventos</h1>
+'use client'
+
+import { HeaderEventos } from '@/components/Headers/Eventos'
+import { TemplateApp } from '@/components/Template'
+
+export default function App() {
+  return <TemplateApp header={<HeaderEventos />} table={<></>} />
 }
