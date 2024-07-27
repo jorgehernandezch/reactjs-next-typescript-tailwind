@@ -9,7 +9,7 @@ interface HeaderLayoutProps {
   total: number
   totalText: string
   button?: JSX.Element
-  filters?: boolean
+  kpi?: boolean
 }
 
 export const HeaderLayout = ({
@@ -18,7 +18,7 @@ export const HeaderLayout = ({
   total,
   totalText,
   button,
-  filters,
+  kpi,
 }: HeaderLayoutProps) => {
   return (
     <div className="flex flex-col p-4 gap-3">
@@ -41,7 +41,8 @@ export const HeaderLayout = ({
           {button ?? button}
         </div>
       </div>
-      {filters && <Filters />}
+      {kpi && <></>}
+      <Filters />
     </div>
   )
 }

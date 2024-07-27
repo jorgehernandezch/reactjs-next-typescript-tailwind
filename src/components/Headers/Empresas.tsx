@@ -17,7 +17,6 @@ export const HeaderEmpresas = () => {
           starIcon={<FontAwesomeIcon icon={faBuilding} />}
         />
       }
-      filters
     />
   )
 }

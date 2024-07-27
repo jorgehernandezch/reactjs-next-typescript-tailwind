@@ -17,7 +17,6 @@ export const HeaderEquipes = () => {
           starIcon={<FontAwesomeIcon icon={faUsersCog} />}
         />
       }
-      filters
     />
   )
 }

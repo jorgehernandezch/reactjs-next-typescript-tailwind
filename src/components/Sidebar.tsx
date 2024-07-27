@@ -5,8 +5,9 @@ import { initFlowbite } from 'flowbite'
 import Image from 'next/image'
 import { ItemSidebar } from './ItemSidebar'
 import {
-  faBuilding,
+  faCalendarPlus,
   faChartLine,
+  faCity,
   faCog,
   faIdCardAlt,
   faMobile,
@@ -63,7 +64,7 @@ export const Sidebar = () => {
               />
               <ItemSidebar
                 isSelected={selectedPath === '/app/empresas'}
-                icon={faCog}
+                icon={faCity}
                 text="Gestão de Empresas"
                 path="/app/empresas"
                 onClick={() => {
@@ -72,7 +73,7 @@ export const Sidebar = () => {
               />
               <ItemSidebar
                 isSelected={selectedPath === '/app/equipes'}
-                icon={faIdCardAlt}
+                icon={faUsersCog}
                 text="Go Leads Equipes"
                 path="/app/equipes"
                 onClick={() => {
@@ -81,8 +82,8 @@ export const Sidebar = () => {
               />
               <ItemSidebar
                 isSelected={selectedPath === '/app/consultores'}
-                icon={faUsersCog}
-                text="Go Leads Consultores"
+                icon={faIdCardAlt}
+                text="Gestão de Consultores"
                 path="/app/consultores"
                 onClick={() => {
                   setSelectedPath('/app/consultores')
@@ -90,7 +91,7 @@ export const Sidebar = () => {
               />
               <ItemSidebar
                 isSelected={selectedPath === '/app/eventos'}
-                icon={faBuilding}
+                icon={faCalendarPlus}
                 text="Go Leads Eventos"
                 path="/app/eventos"
                 onClick={() => {

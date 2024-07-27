@@ -8,7 +8,6 @@ export const HeaderLeads = () => {
       title="Leads do App"
       total={458}
       totalText="Leads"
-      filters
     />
   )
 }
