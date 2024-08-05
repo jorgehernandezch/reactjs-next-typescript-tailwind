@@ -1,24 +1,24 @@
 # React JS
-_Next 13 | Typescript | Tailwind | Google Fonts_
+_Next 14 | Typescript | Tailwind | Google Fonts_
 
-## Comenzando 🚀
+## Getting Started 🚀
 
-_Sigue las siguientes instrucciones para clonar este repositorio en tu máquina local y poder trabajar desde el principio con React JS, Next, Tailwind y Google Fonts._
+_Follow these instructions to clone this repository to your local machine and start working with React JS, Next, Tailwind, and Google Fonts from the beginning._
 
-### Pre-requisitos 📋
+### Prerequisites 📋
 
-Para clonar este repositorio, debes tener instalado Node JS e un gestor de paquetes como NPM o Yarn.
+To clone this repository, you need to have Node JS and a package manager like NPM or Yarn installed.
 
-Antes de comenzar verifica si tienes Node JS con cualquiera de los siguientes comandos en tu terminal.
+Before you start, check if you have Node JS installed by running any of the following commands in your terminal:
 ```
 node --version 
 node -v
 ```
-Si no lo tienes instalado lo pueden instalar siguiendo la documentación oficial en:  
+If you don't have it installed, you can follow the official documentation to install it here: 
 https://nodejs.org/en/
-_Siempre recomiendo einstalar la versión LTS_
+_I always recommend installing the LTS version._
 
-Verifica las versiones de los gestores de paquetes con
+Check the versions of the package managers with:
 
 ```
 npm --version
@@ -30,30 +30,30 @@ Versión Node - 16.17.0
 Versión NPM - 8.15.0
 Versión Yarn - 2.3.5 
 
-### Instalación 🔧
+### Installation 🔧
 
-_Clone el repositorio_
+_Clone the repository_
 
 ```
 git clone https://github.com/jorgehernandezch/reactjs-next-typescript-tailwind.git
 ```
 
-_Instale todas las dependencias del Proyecto con_
+_Install all the project dependencies with_
 
 ```
 npm install
 ```
 
-_Inicie el proyecto con_
+_Start the project with_
 
 ```
 npm run dev
 ```
-_Si todo está correcto puede acceder al proyecto en la dirección http://localhost:3000/_
+_If everything is correct, you can access the project at http://localhost:3000/_
 
-### Colaboración
-_Haz un fork del proyecto y crea un Pull Request a la rama Dev. Pull Request a la rama Master será cerrado._
+### Collaboration
+_Fork the project and create a Pull Request to the Dev branch. Pull Requests to the Master branch will be closed._
 
 ---
 [Jorge Edo. Hernández](https://github.com/jorgehernandezch)  
-_Ingeniero y Desarrollador Web_
+_Engineer and Web Developer_
