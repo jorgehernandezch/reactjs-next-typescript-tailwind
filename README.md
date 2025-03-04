@@ -1,5 +1,5 @@
 # React JS
-_Next 14 | Typescript | Tailwind | Google Fonts_
+_Next 15 | Typescript | Tailwind | Google Fonts_
 
 ## Getting Started 🚀
 
@@ -24,11 +24,11 @@ Check the versions of the package managers with:
 npm --version
 yarn -v
 ```
-Mínimas Versiones
+Minimum Versions:
 
-Versión Node - 16.17.0
-Versión NPM - 8.15.0
-Versión Yarn - 2.3.5 
+- **Node Version** - 18.0.0
+- **NPM Version** - 9.0.0
+- **Yarn Version** - 3.2.0 
 
 ### Installation 🔧
 
@@ -50,6 +50,22 @@ _Start the project with_
 npm run dev
 ```
 _If everything is correct, you can access the project at http://localhost:3000/_
+
+### Running with Docker 🐳
+
+_You can also run the project using Docker. Follow these steps:_
+
+**1. Build the Docker image:**
+```
+docker build -t reactjs-next-app .
+```
+
+**2. Run the container:**
+```
+docker run -p 3000:3000 -v $(pwd):/app -v /app/node_modules --rm reactjs-next-app
+```
+
+_This will start the application and you can access it at http://localhost:3000/_
 
 ### Collaboration
 _Fork the project and create a Pull Request to the Dev branch. Pull Requests to the Master branch will be closed._
