@@ -1,3 +1,5 @@
+# Basic React Next.js Application
+
 # React JS
 _Next 15 | Typescript | Tailwind | Google Fonts_
 
