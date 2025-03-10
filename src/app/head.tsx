@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>Title App</title>
+      <title>Next JS 15</title>
     </>
   )
 }
