@@ -1,19 +1,20 @@
-FROM node:18
+# Usa una imagen base de Node.js
+FROM node:20-alpine
 
-# Establecer el directorio de trabajo en el contenedor
+# Establece el directorio de trabajo dentro del contenedor
 WORKDIR /app
 
-# Copiar los archivos package.json y package-lock.json (o yarn.lock si usas Yarn)
+# Copia los archivos package.json y package-lock.json (o yarn.lock)
 COPY package*.json ./
 
-# Instalar dependencias
+# Instala las dependencias del proyecto
 RUN npm install
 
-# Copiar el resto del código fuente al contenedor
+# Copia todo el código fuente de tu aplicación al contenedor
 COPY . .
 
-# Exponer el puerto de desarrollo de Next.js
+# Expone el puerto 3000 para acceder a la app
 EXPOSE 3000
 
-# Comando por defecto para iniciar la aplicación en modo desarrollo
+# Define el comando para iniciar la aplicación en modo desarrollo
 CMD ["npm", "run", "dev"]

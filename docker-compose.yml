@@ -1,0 +1,13 @@
+version: '3'
+services:
+  next-app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules  # Volumen solo para node_modules, se instalarán dentro del contenedor
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
+    working_dir: /app
