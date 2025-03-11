@@ -1,7 +1,8 @@
 version: '3'
 services:
-  next-app:
-    build: .
+  react-next-15:
+    image: node20:latest
+    container_name: react-next-15
     ports:
       - "3000:3000"
     volumes:
