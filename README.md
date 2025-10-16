@@ -1,137 +1,137 @@
-# React JS
-_Next 15 | Typescript | Tailwind | Google Fonts_
+# Next.js + TypeScript + Tailwind CSS Project
 
-## Getting Started 🚀
+A modern web application built with Next.js 15, React 19, TypeScript, and Tailwind CSS. This project includes a complete development setup with ESLint, Prettier, and Docker support.
 
-_Follow these instructions to clone this repository to your local machine and start working with React JS, Next, Tailwind, and Google Fonts from the beginning._
+## 🚀 Tech Stack
 
-### Prerequisites 📋
+- **Next.js 15.5.5** - React framework for production
+- **React 19.0.0** - JavaScript library for building user interfaces
+- **TypeScript 5.8.2** - Typed superset of JavaScript
+- **Tailwind CSS 3.4.17** - Utility-first CSS framework
+- **ESLint** - Code linting with Airbnb and Standard configurations
+- **Prettier** - Code formatting
 
-To clone this repository, you need to have Node.js and a package manager like NPM or Yarn installed.
+## 📋 Prerequisites
 
-Before you start, check if you have Node.js installed by running any of the following commands in your terminal:
+- Node.js 18.x or higher
+- npm or yarn
+- Docker and Docker Compose (for containerized deployment)
 
-```
-node --version
-node -v
-```
+## 🛠️ Installation
 
-If you don't have it installed, you can follow the official documentation to install it here:  
-[https://nodejs.org/en/](https://nodejs.org/en/)
+### Local Development
 
-_I always recommend installing the LTS version._
-
-Check the versions of the package managers with:
-
-```
-npm --version
-yarn -v
-```
-
-**Minimum Versions:**
-- **Node.js**: 18.0.0
-- **NPM**: 9.0.0
-- **Yarn**: 3.0.0
-
----
-
-### Installation 🔧
-
-#### **Without Docker**
-
-_Clone the repository:_
-
-```
-git clone https://github.com/jorgehernandezch/reactjs-next-typescript-tailwind.git
+1. Clone the repository:
+```bash
+git clone reactjs-next-typescript-tailwind
+cd reactjs-next-typescript-tailwind
 ```
 
-_Install all the project dependencies:_
+## 🐳 Docker 
 
-```
-npm install
-```
+### Using Docker Compose
 
-_Start the project:_
-
-```
-npm run dev
+1. Build and start the container:
+```bash
+docker-compose up -d
 ```
 
-_If everything is correct, you can access the project at [http://localhost:3000/](http://localhost:3000/)_
-
----
-
-#### **With Docker** 🐳
-
-**1. Build the Docker image:**
-
-```
-docker build -t my-next-app .
+2. Stop the container:
+```bash
+docker-compose down
 ```
 
-**2. Run the container:**
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-```
-docker run -p 3000:3000 --name my-next-app my-next-app
-```
+### Docker Compose Configuration
 
-_This will start the application, and you can access it at [http://localhost:3000/](http://localhost:3000/)_
-
-**3. Access the container's terminal:**
-
-```
-docker exec -it my-next-app sh
-```
-
-**4. Stop and remove the container:**
-
-To stop the container:
-```
-docker stop my-next-app
-```
-
-To remove the container:
-```
-docker rm my-next-app
-```
-
-**5. Using Docker Compose (optional)**
-
-If you prefer using `docker-compose`, use the following steps to set up and run the app:
-
-- Create a `docker-compose.yml` file with the following content:
+Create a `docker-compose.yml` file in your project root:
 
 ```yaml
-version: '3'
+version: '3.8'
+
 services:
-  next-app:
-    build: .
+  nextjs-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nextjs-typescript-app
     ports:
       - "3000:3000"
     volumes:
       - .:/app
-      - /app/node_modules  # Mount node_modules inside the container
+      - /app/node_modules
+      - /app/.next
     environment:
       - NODE_ENV=development
     command: npm run dev
-    working_dir: /app
 ```
 
-- Build and start the service:
+## 📜 Available Scripts
+
+- `npm run dev` - Start development server on port 3000
+- `npm run build` - Build the application for production
+- `npm start` - Start the production server
+- `npm run lint` - Run ESLint to check code quality
+
+## 🔧 Configuration Files
+
+### ESLint Configuration
+
+The project uses multiple ESLint configurations:
+- Airbnb TypeScript style guide
+- Standard TypeScript configuration
+- Next.js recommended rules
+- Prettier integration
+- React and React Hooks plugins
+
+### TypeScript Configuration
+
+TypeScript is configured for strict type checking with Next.js support.
+
+### Tailwind CSS
+
+Tailwind CSS is configured with PostCSS for optimal styling workflow.
+
+## 📁 Project Structure
 
 ```
-docker-compose up --build
+.
+├── public/              # Static files
+├── src/                 # Source files
+│   ├── app/            # Next.js app directory
+│   ├── components/     # React components
+│   └── styles/         # Global styles
+├── .eslintrc.json      # ESLint configuration
+├── .prettierrc         # Prettier configuration
+├── tsconfig.json       # TypeScript configuration
+├── tailwind.config.js  # Tailwind CSS configuration
+├── postcss.config.js   # PostCSS configuration
+├── next.config.js      # Next.js configuration
+├── Dockerfile          # Docker configuration
+├── docker-compose.yml  # Docker Compose configuration
+└── package.json        # Project dependencies
 ```
 
-_This will start the application, and you can access it at [http://localhost:3000/](http://localhost:3000/)_
+## 🤝 Contributing
 
----
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-### Collaboration 🤝
+## 📝 License
 
-_Fork the project and create a Pull Request to the Dev branch. Pull Requests to the Master branch will be closed._
+This project is private and proprietary.
+
+## 📧 Contact
+
+For questions or support, please contact the development team.
 
 ---
 
 [Jorge Edo. Hernández](https://github.com/jorgehernandezch)  
 _Engineer and Web Developer_
+
+Made with ❤️ using Next.js, TypeScript, and Tailwind CSS
